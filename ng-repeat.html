@@ -1,0 +1,14 @@
+<html>
+	<body data-ng-app="" >	
+		<div class="container" data-ng-init="customers=[{name:'hemant', city:'newyark'},{name:'sharma', city:'hathras'},{name:'kumar', city:'ALIGARH'}]" >
+			no. of customers {{customers.length}}
+			<br>
+			<input type="text" ng-model="name" />{{name|uppercase}}		
+			<br>	
+		
+			<li data-ng-repeat="cust in customers| filter:name| orderBy:'name'">{{cust.name|lowercase}}-{{cust.city|uppercase}}</li>
+			
+		</div>
+		<script src="angular.min.js"></script>
+	</body>
+</html>

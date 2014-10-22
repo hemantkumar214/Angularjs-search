@@ -1,0 +1,31 @@
+
+
+        <div data-ng-controller="simplecontroller">
+          <input type="text" data-ng-model='filter.gender'/>
+            {{name}}
+         <ul>
+             <li data-ng-repeat="name in customer|filter:filter.gender">{{name.name}}-{{name.age}}-{{name.gender}}</li>
+             </ul>
+            
+            
+            customer name: <br>
+            <input type="text" data-ng-model="newcustomer.name"/>
+            <br>
+            customer age: <br>
+            <input type="text" data-ng-model="newcustomer.age"/>
+            
+            <br>
+            
+            customer gender: <br>
+            <input type="text" data-ng-model="newcustomer.gender"/>
+            
+            <br>
+            <button data-ng-click="addcustomer()">Add Customer</button>
+        <br>
+        
+        <a href="#/index2">index2</a>
+        
+        
+        </div>
+       
+

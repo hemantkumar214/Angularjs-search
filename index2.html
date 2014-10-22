@@ -1,0 +1,10 @@
+  <div data-ng-controller="simplecontroller">
+          <input type="text" ng-model='name1'/>
+            {{name}}
+         <ul>
+             <li data-ng-repeat="name in customer|filter:name1">{{name.name}}-{{name.age}}-{{name.gender}}</li>
+             </ul>
+            
+            <a href="#/index1">index1</a>
+            </div>
+       
